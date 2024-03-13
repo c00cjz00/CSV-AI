@@ -62,12 +62,12 @@ pip install --upgrade pip
 ```
 - Step4
 ```
-cd $HOME/github/CSV-AI
+cd /github/CSV-AI
 pip install -r requirements.txt
 ```
 - Step 5
 ```
-cd $HOME/github/CSV-AI
-nohup streamlit run app.py  --server.port=33333 > my.log 2>&1 &
+cd /github/CSV-AI
+nohup streamlit run app.py  --server.port=3333 > my.log 2>&1 &
 ```
 
