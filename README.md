@@ -68,6 +68,7 @@ pip install -r requirements.txt
 - Step 5
 ```
 cd /github/CSV-AI
+ps -ef |grep app.py | awk '{print $2}' | xargs kill -9
 nohup streamlit run app.py  --server.port=3333 > my.log 2>&1 &
 ```
 
