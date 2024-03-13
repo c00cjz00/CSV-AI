@@ -40,3 +40,25 @@ If you have any feedback, suggestions, or issues related to CSV-AI, please open 
 
 ## License
 CSV-AI is licensed under the MIT License.
+
+
+## MEMORY
+```
+- Step1
+```
+mkdir ~/github
+cd ~/github 
+git clone https://github.com/Safiullah-Rahu/CSV-AI.git
+```
+- Step 2
+```
+docker stop python; docker rm python
+docker run --name python -v $HOME/github /github -d python:3.10.13 sleep infinity
+```
+- Step3
+```
+docker exec -it python bash
+pip install --upgrade pip
+cd $HOME/github/CSV-AI
+pip install -r requirements.txt
+```
